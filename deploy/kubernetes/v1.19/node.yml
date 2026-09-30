@@ -91,7 +91,7 @@ spec:
             # privileged alone does not change the runtime user.
             runAsUser: 0
           imagePullPolicy: IfNotPresent
-          image: ghcr.io/ceresimaging/synology-csi:v1.4.0-alpine.1
+          image: ghcr.io/ceresimaging/synology-csi:v1.4.0-ceres.2
           args:
             - --nodeid=$(KUBE_NODE_NAME)
             - --endpoint=$(CSI_ENDPOINT)

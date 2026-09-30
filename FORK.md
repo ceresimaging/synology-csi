@@ -52,3 +52,5 @@ Carried on `ceres` only:
 
 | Patch | Upstream | Status |
 |---|---|---|
+| `nfsClientAllowlist` StorageClass parameter: NFS share clients from a comma-separated list of IPs/CIDRs/`*` instead of node InternalIPs, for NAT'd or routed NAS subnets | [#142](https://github.com/SynologyOpenSource/synology-csi/pull/142) (fixes [#113](https://github.com/SynologyOpenSource/synology-csi/issues/113)) | Open |
+| Go toolchain and dependency CVE fixes (grpc, client-go, x/net, x/crypto, …), without its UBI Dockerfile changes | [#147](https://github.com/SynologyOpenSource/synology-csi/pull/147) | Open |
