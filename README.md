@@ -1,5 +1,14 @@
 # Synology CSI Driver for Kubernetes
 
+> [!NOTE]
+> **Ceres Imaging fork.** Upstream v1.4.0 was never published to Docker Hub, and its
+> UBI9 image can't be built without a RHEL subscription. This fork builds it on Alpine,
+> the same base as upstream v1.3.1, and publishes public multi-arch images:
+> - `ghcr.io/ceresimaging/synology-csi:v1.4.0-alpine.1`: stock upstream v1.4.0 code, built with Go 1.27
+> - `ghcr.io/ceresimaging/synology-csi:v1.4.0-ceres.2`: plus our patches (NFS client allowlist for [#113](https://github.com/SynologyOpenSource/synology-csi/issues/113), dependency CVE fixes)
+>
+> Not affiliated with Synology. Branches, tags and patches: [FORK.md](FORK.md).
+
 The official [Container Storage Interface](https://github.com/container-storage-interface) driver for Synology NAS.
 
 ### Container Images & Kubernetes Compatibility
