@@ -54,3 +54,4 @@ Carried on `ceres` only:
 |---|---|---|
 | `nfsClientAllowlist` StorageClass parameter: NFS share clients from a comma-separated list of IPs/CIDRs/`*` instead of node InternalIPs, for NAT'd or routed NAS subnets | [#142](https://github.com/SynologyOpenSource/synology-csi/pull/142) (fixes [#113](https://github.com/SynologyOpenSource/synology-csi/issues/113)) | Open |
 | Go toolchain and dependency CVE fixes (grpc, client-go, x/net, x/crypto, …), without its UBI Dockerfile changes | [#147](https://github.com/SynologyOpenSource/synology-csi/pull/147) | Open |
+| `mountPermissions` setuid/setgid/sticky digits (e.g. `2777`) were dropped, so new DSM shares were never `chmod`ed and stayed admin-only for non-root pods | Not yet reported | Fork only |
